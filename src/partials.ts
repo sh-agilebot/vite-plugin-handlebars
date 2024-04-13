@@ -1,4 +1,4 @@
-import { registerPartial } from 'handlebars';
+import Handlebars from 'handlebars';
 import { opendir, readFile } from 'fs/promises';
 import { normalizePath } from 'vite';
 import { join, parse } from 'path';
@@ -47,7 +47,7 @@ export async function registerPartials(
 
           partialsSet.add(fileName);
 
-          registerPartial(partialName, content.toString());
+          Handlebars.registerPartial(partialName, content.toString());
         }
       }
     } catch (e) {

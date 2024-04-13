@@ -1,13 +1,14 @@
 {
   "name": "@agilebot/vite-plugin-handlebars",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "Vite plugin for Handlebars support in HTML",
   "main": "./dist/index.js",
-  "module": "./dist/index.module.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.module.js",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     }
   },
